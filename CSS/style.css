@@ -1,0 +1,51 @@
+@media screen and (max-width: 100vh){
+    *{
+        --gameSize: 80vw;
+    }
+}
+@media screen and (max-height: 100vw){
+    *{
+        --gameSize: 80vh;
+    }
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#playArea{
+    display: grid;
+    width: var(--gameSize);
+    height: var(--gameSize);
+    background: black;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    margin: auto;
+}
+.borderBlock{
+    border: 1px solid grey;
+    background: rgba(0, 0, 0, 0);
+    height: 100%;
+    width: 100%;
+}
+
+.snakePart{
+    background: lightgreen;
+    width: 100%;
+    height: 100%;
+}
+
+#startBtn{
+    position: fixed;
+    top: 1vw;
+    left: 1vw;
+    width: calc(var(--gameSize)/8);
+    height: calc(var(--gameSize)/16);
+}
+#startBtn:not(.started){
+    background: lightgreen;
+}
+#startBtn.started{
+    background: red;
+}
