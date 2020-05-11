@@ -23,12 +23,6 @@
     grid-template-rows: repeat(20, 1fr);
     margin: auto;
 }
-.borderBlock{
-    border: 1px solid grey;
-    background: rgba(0, 0, 0, 0);
-    height: 100%;
-    width: 100%;
-}
 
 .snakePart{
     background: lightgreen;
