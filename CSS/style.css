@@ -43,3 +43,14 @@
 #startBtn.started{
     background: red;
 }
+#candy{
+    background: red;
+    width: 100%;
+    height: 100%;
+}
+#score{
+    position: fixed;
+    top: 1vw;
+    right: 1vw;
+    float: right;
+}
